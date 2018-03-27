@@ -43,7 +43,7 @@ public class TusUpload {
 
         metadata = new HashMap<String, String>();
         metadata.put("filename", file.getName());
-        metadata.put("filetype",filePath.substring(filePath.lastIndexOf(".") + 1));
+        metadata.put("filetype",file.getPath().substring(file.getPath().lastIndexOf(".") + 1));
     }
 
     public long getSize() {
